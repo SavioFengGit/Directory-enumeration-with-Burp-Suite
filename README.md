@@ -17,3 +17,22 @@ Burp Extender: a feature that allows you to extend the functionality of Burp Sui
 
 Burp Suite is available in two editions: Community and Professional. The Community edition is free and provides the essential manual toolkit for learning about web security testing. The Professional edition is paid and provides faster, more reliable, and more customizable security testing for AppSec professionals<br>
 <img src="burp.png" width=66% height="auto"><br>
+
+## Directory enumeration with Burp Suite
+**The target 192.35.209.3 is running OWASP Mutillidae II.** <br>
+ - **Start burp suite** <br>
+ - **Turning on Foxyproxy and take the GET request** <br>
+ - **Navigate to the intruder tab and set the target machine IP address.** <br>
+<img src="intruder.png" width=66% height="auto"><br>
+ - **Configure the Payload positions (set a payload adding §name§ and clear§ from cookie line)** <br>
+<img src="positions.png" width=66% height="auto"><br>
+ - **Configure your wordlist on payloads tab, set your custom words and import the dirb list in the path /usr/share/wordlists/dirb/common.txt** <br>
+<img src="words.png" width=66% height="auto"><br>
+ - **Click on “Start Attack” and check the status code for the payloads** <br>
+<img src="status.png" width=66% height="auto"><br><br>
+
+**We are interest in status code 200(ok) and 301(directory exists but moved permanently)** <br>
+
+#Author
+<b>Xiao Li Savio Feng</b>
+
