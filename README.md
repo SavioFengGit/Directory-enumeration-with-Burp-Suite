@@ -20,18 +20,17 @@ Burp Suite is available in two editions: Community and Professional. The Communi
 
 ## Directory enumeration with Burp Suite
 **The target 192.35.209.3 is running OWASP Mutillidae II.** <br>
- - **Start burp suite** <br>
- - **Turning on Foxyproxy and take the GET request** <br>
+ - **Start burp suite and turning on Foxyproxy and take the GET request** <br>
  - **Navigate to the intruder tab and set the target machine IP address.** <br>
-<img src="intruder.png" width=66% height="auto"><br>
+<img src="intruder.png" width=50% height="auto"><br><br>
  - **Configure the Payload positions (set a payload adding §name§ and clear§ from cookie line)** <br>
-<img src="positions.png" width=66% height="auto"><br>
+<img src="positions.png" width=88% height="auto"><br><br>
  - **Configure your wordlist on payloads tab, set your custom words and import the dirb list in the path /usr/share/wordlists/dirb/common.txt** <br>
-<img src="words.png" width=66% height="auto"><br>
+<img src="words.png" width=66% height="auto"><br><br>
  - **Click on “Start Attack” and check the status code for the payloads** <br>
 <img src="status.png" width=66% height="auto"><br><br>
 
-**We are interest in status code 200(ok) and 301(directory exists but moved permanently)** <br>
+**We are interested in status code 200 (ok) and 301 (directory exists but moved permanently)** <br>
 
 #Author
 <b>Xiao Li Savio Feng</b>
