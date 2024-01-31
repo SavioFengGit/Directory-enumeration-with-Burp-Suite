@@ -20,7 +20,7 @@ Burp Suite is available in two editions: Community and Professional. The Communi
 
 ## Directory enumeration with Burp Suite
 **The target 192.35.209.3 is running OWASP Mutillidae II.** <br>
- - **Start burp suite and turning on Foxyproxy and take the GET request** <br>
+ - **Start Burp Suite and turn on FoxyProxy, then refresh the page to get the GET request.** <br>
  - **Navigate to the intruder tab and set the target machine IP address.** <br>
 <img src="intruder.png" width=50% height="auto"><br><br>
  - **Configure the Payload positions (set a payload adding §name§ and clear§ from cookie line)** <br>
